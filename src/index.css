@@ -1,0 +1,284 @@
+@import "tailwindcss";
+
+/* Tell Tailwind v4 to use class-based dark mode (.dark on <html>) */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand Colors */
+  --color-light-beige: #f9f7f3;
+  --color-soft-orange: #d97757;
+  --color-dark-brown: #3b2f2f;
+  --color-light-gray: #e5e7eb;
+
+  /* Dark Theme */
+  --color-dark-bg: #1c1c1e;
+  --color-dark-surface: #2c2c2e;
+  --color-dark-card: #3a3a3c;
+
+  /* Font Family */
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Box Shadows */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --shadow-soft-dark: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+  /* Spacing */
+  --spacing-128: 32rem;
+  --spacing-144: 36rem;
+
+  /* Border Radius */
+  --radius-3xl: 1.5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  body {
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 3.75rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.25rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--color-soft-orange);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-soft-orange);
+    color: #fff;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-light-gray);
+    color: var(--color-dark-brown);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover {
+    opacity: 0.85;
+  }
+
+  .dark .btn-secondary {
+    background-color: var(--color-dark-card);
+    color: #fff;
+  }
+
+  .btn-ghost {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    color: var(--color-soft-orange);
+    border: 2px solid var(--color-soft-orange);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .btn-ghost:hover {
+    background-color: var(--color-soft-orange);
+    color: #fff;
+  }
+
+  /* Card Styles */
+  .card {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s;
+    background-color: #fff;
+    border: 1px solid var(--color-light-gray);
+  }
+  .card:hover {
+    box-shadow: var(--shadow-medium);
+  }
+
+  @media (min-width: 768px) {
+    .card {
+      padding: 2rem;
+    }
+  }
+
+  .dark .card {
+    background-color: var(--color-dark-card);
+    border-color: var(--color-dark-surface);
+  }
+  .dark .card:hover {
+    box-shadow: var(--shadow-soft-dark);
+  }
+
+  /* Container */
+  .container-custom {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-custom {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Section */
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+
+  @media (min-width: 768px) {
+    .section {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  .dark .section {
+    background-color: var(--color-dark-bg);
+  }
+
+  .section-alt {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: var(--color-light-beige);
+    transition: background-color 0.3s;
+  }
+
+  @media (min-width: 768px) {
+    .section-alt {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-alt {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  .dark .section-alt {
+    background-color: var(--color-dark-surface);
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-light-gray);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background-color: var(--color-dark-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-soft-orange);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-color: #fff;
+    color: var(--color-dark-brown);
+  }
+}
