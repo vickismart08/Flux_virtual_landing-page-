@@ -385,7 +385,7 @@ export const HeroSection = () => {
                 <img
                   src={config.images.heroMockup}
                   alt="Flux Virtual App Mockup"
-                  className="w-full max-w-xs object-contain mx-auto"
+                  className="w-full max-w-xs object-contain mx-auto rounded-3xl"
                 />
               ) : (
                 <PhoneMockup />
