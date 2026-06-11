@@ -13,6 +13,7 @@ import {
   Footer,
 } from "./components";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { Pricing } from "./pages/Pricing";
 
 // Landing page layout
 function Home() {
@@ -41,6 +42,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
     </BrowserRouter>
   );

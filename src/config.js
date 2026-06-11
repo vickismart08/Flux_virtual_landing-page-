@@ -30,14 +30,14 @@ export const config = {
   images: {
     logo: '/logo.svg',
     favicon: '/favicon.svg',
-    heroMockup: '/images/phone-mockup.png',
+    heroMockup: '/images/screenshots/Simulator Screenshot - iPhone 17 Pro Max - 2026-06-09 at 15.52.44.png',
     screenshots: [
-      '/images/screenshots/1.png',
-      '/images/screenshots/2.png',
-      '/images/screenshots/3.png',
-      '/images/screenshots/4.png',
-      '/images/screenshots/5.png',
-      '/images/screenshots/6.png',
+      '/images/screenshots/Simulator Screenshot - iPhone 17 Pro Max - 2026-06-09 at 15.54.13.png',
+      '/images/screenshots/Simulator Screenshot - iPhone 17 Pro Max - 2026-06-09 at 15.54.02.png',
+      '/images/screenshots/Simulator Screenshot - iPhone 17 Pro Max - 2026-06-09 at 15.52.44.png',
+      '/images/screenshots/Simulator Screenshot - iPhone 17 Pro Max - 2026-06-09 at 15.56.10.png',
+      '/images/screenshots/Simulator Screenshot - iPhone 17 Pro Max - 2026-06-11 at 10.05.01.png',
+      '/images/screenshots/Simulator Screenshot - iPhone 17 Pro Max - 2026-06-11 at 10.05.13.png',
     ],
   },
 
