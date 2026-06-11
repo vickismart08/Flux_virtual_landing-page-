@@ -142,7 +142,7 @@ export const Pricing = () => {
                 rel="noopener noreferrer"
                 className="block w-full text-center py-4 px-6 bg-soft-orange hover:bg-soft-orange/90 text-white font-bold rounded-2xl transition-all duration-200 active:scale-95 text-base shadow-lg shadow-soft-orange/30"
               >
-                Get Started Now
+                Buy Now
               </a>
 
               <p className="text-xs text-center text-gray-400 dark:text-gray-500 mt-4">
