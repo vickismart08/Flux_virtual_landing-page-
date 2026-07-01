@@ -75,10 +75,10 @@ export const PrivacyPolicy = () => {
             </strong>
             &nbsp;·&nbsp; Contact:{" "}
             <a
-              href="mailto:fluxvirtualofficial@gmail.com"
+              href="mailto:support@flux-virtual.online"
               className="text-soft-orange hover:underline"
             >
-              fluxvirtualofficial@gmail.com
+              support@flux-virtual.online
             </a>
           </p>
         </motion.div>
@@ -184,10 +184,10 @@ export const PrivacyPolicy = () => {
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               Email:{" "}
               <a
-                href="mailto:fluxvirtualofficial@gmail.com"
+                href="mailto:support@flux-virtual.online"
                 className="text-soft-orange hover:underline font-medium"
               >
-                fluxvirtualofficial@gmail.com
+                support@flux-virtual.online
               </a>
             </p>
           </div>

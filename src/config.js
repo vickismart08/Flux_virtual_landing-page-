@@ -9,7 +9,7 @@ export const config = {
     name: 'Flux Virtual',
     tagline: 'Global Virtual Numbers. SMS, Calls & Verification in Minutes.',
     description: 'Purchase virtual phone numbers from multiple countries and use them for SMS verification, voice calls, messaging, online registrations, and business communication.',
-    email: 'fluxvirtualofficial@gmail.com',
+    email: 'support@flux-virtual.online',
     copyright: '© 2026 Flux Virtual. All rights reserved.',
     company: 'SWIFTDROP PREMIER SOLUTIONS LIMITED',
     companyTagline: 'Flux Virtual is a product of SWIFTDROP PREMIER SOLUTIONS LIMITED',
@@ -26,7 +26,7 @@ export const config = {
   legal: {
     privacy: '/privacy-policy',
     terms: 'https://fluxvirtual.com/terms-of-service',
-    support: 'mailto:fluxvirtualofficial@gmail.com',
+    support: 'mailto:support@flux-virtual.online',
   },
 
   // Images/Screenshots (Replace with actual paths)
