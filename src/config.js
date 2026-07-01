@@ -11,6 +11,9 @@ export const config = {
     description: 'Purchase virtual phone numbers from multiple countries and use them for SMS verification, voice calls, messaging, online registrations, and business communication.',
     email: 'fluxvirtualofficial@gmail.com',
     copyright: '© 2026 Flux Virtual. All rights reserved.',
+    company: 'SWIFTDROP PREMIER SOLUTIONS LIMITED',
+    companyTagline: 'Flux Virtual is a product of SWIFTDROP PREMIER SOLUTIONS LIMITED',
+    companyOperator: 'Operated by SWIFTDROP PREMIER SOLUTIONS LIMITED',
   },
 
   // Download Links (Replace these with actual app store links)

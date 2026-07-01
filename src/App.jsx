@@ -14,6 +14,9 @@ import {
 } from "./components";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { Pricing } from "./pages/Pricing";
+import { About } from "./pages/About";
+import { TermsOfService } from "./pages/TermsOfService";
+import { Contact } from "./pages/Contact";
 
 // Landing page layout
 function Home() {
@@ -43,6 +46,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

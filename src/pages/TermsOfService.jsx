@@ -1,10 +1,8 @@
-/**
- * Privacy Policy Page
- */
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Shield } from "lucide-react";
+import { ArrowLeft, FileText } from "lucide-react";
+import { config } from "../config";
 
 const Section = ({ number, title, children }) => (
   <div className="mb-10">
@@ -17,19 +15,18 @@ const Section = ({ number, title, children }) => (
   </div>
 );
 
-export const PrivacyPolicy = () => {
+export const TermsOfService = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Privacy Policy — Flux Virtual";
+    document.title = "Terms of Service — Flux Virtual";
     return () => {
-      document.title =
-        "Flux Virtual - Global Virtual Phone Numbers for SMS & Calls";
+      document.title = config.seo.title;
     };
   }, []);
 
   return (
     <div className="min-h-screen bg-white dark:bg-dark-bg transition-colors duration-300">
-      {/* Minimal Header */}
+      {/* Header */}
       <header className="sticky top-0 z-50 bg-white/80 dark:bg-dark-bg/80 backdrop-blur-md border-b border-light-gray dark:border-dark-surface">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           <Link
@@ -55,31 +52,22 @@ export const PrivacyPolicy = () => {
         >
           <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 bg-soft-orange/10 rounded-xl flex items-center justify-center">
-              <Shield className="w-5 h-5 text-soft-orange" />
+              <FileText className="w-5 h-5 text-soft-orange" />
             </div>
             <span className="text-soft-orange font-semibold text-xs uppercase tracking-wider">
               Legal
             </span>
           </div>
           <h1 className="text-3xl font-bold text-dark-brown dark:text-white mb-2">
-            Privacy Policy
+            Terms of Service
           </h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             Effective Date:{" "}
+            <strong className="text-dark-brown dark:text-white">June 4, 2026</strong>
+            &nbsp;·&nbsp; Operated by:{" "}
             <strong className="text-dark-brown dark:text-white">
-              June 4, 2026
+              SWIFTDROP PREMIER SOLUTIONS LIMITED
             </strong>
-            &nbsp;·&nbsp; App Name:{" "}
-            <strong className="text-dark-brown dark:text-white">
-              Flux Virtual
-            </strong>
-            &nbsp;·&nbsp; Contact:{" "}
-            <a
-              href="mailto:fluxvirtualofficial@gmail.com"
-              className="text-soft-orange hover:underline"
-            >
-              fluxvirtualofficial@gmail.com
-            </a>
           </p>
         </motion.div>
       </div>
@@ -96,84 +84,93 @@ export const PrivacyPolicy = () => {
             SWIFTDROP PREMIER SOLUTIONS LIMITED
           </p>
           <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Flux Virtual is a product developed and operated by SWIFTDROP
-            PREMIER SOLUTIONS LIMITED. This Privacy Policy explains how we
-            collect, use, and protect your information when you use our mobile
-            application and services.
+            These Terms of Service govern your use of Flux Virtual, a product
+            developed and operated by SWIFTDROP PREMIER SOLUTIONS LIMITED.
           </p>
         </div>
 
-        <Section number="1" title="Information We Collect">
-          <ul className="list-disc list-inside space-y-1.5 pl-1">
-            <li>Name</li>
-            <li>Email address</li>
-            <li>Login credentials (email/password or Google/Apple sign-in)</li>
-            <li>Contacts (only if permission is granted)</li>
-            <li>Device and usage data</li>
-            <li>Payment information processed by third-party providers</li>
-          </ul>
-        </Section>
-
-        <Section number="2" title="How We Use Information">
-          <ul className="list-disc list-inside space-y-1.5 pl-1">
-            <li>Provide virtual number services</li>
-            <li>Manage user accounts</li>
-            <li>Process payments and subscriptions</li>
-            <li>Improve app performance</li>
-            <li>Prevent fraud and abuse</li>
-            <li>Provide customer support</li>
-          </ul>
-        </Section>
-
-        <Section number="3" title="Payment Provider">
+        <Section number="1" title="Acceptance of Terms">
           <p>
-            Payments are processed securely through{" "}
+            By downloading, installing, or using the Flux Virtual mobile
+            application, you agree to be bound by these Terms of Service. Flux
+            Virtual is operated by{" "}
             <strong className="text-dark-brown dark:text-white">
-              Paystack
-            </strong>{" "}
-            and other authorized payment providers. We do not store full payment
-            card details on our servers.
+              SWIFTDROP PREMIER SOLUTIONS LIMITED
+            </strong>
+            . If you do not agree to these terms, do not use the service.
           </p>
         </Section>
 
-        <Section number="4" title="Third-Party Services">
+        <Section number="2" title="Service Description">
           <p>
-            We may use Firebase, Google Sign-In, Apple Sign-In, analytics
-            services, and payment providers to deliver app functionality.
+            Flux Virtual, operated by SWIFTDROP PREMIER SOLUTIONS LIMITED,
+            provides virtual phone numbers that allow users to send and receive
+            SMS messages and voice calls from supported countries.
           </p>
         </Section>
 
-        <Section number="5" title="Data Sharing">
+        <Section number="3" title="User Accounts">
+          <ul className="list-disc list-inside space-y-1.5 pl-1">
+            <li>You must provide accurate information when creating your account.</li>
+            <li>You are responsible for keeping your account credentials secure.</li>
+            <li>You must be at least 18 years old to use this service.</li>
+            <li>One account per user is permitted.</li>
+          </ul>
+        </Section>
+
+        <Section number="4" title="Payments and Credits">
+          <ul className="list-disc list-inside space-y-1.5 pl-1">
+            <li>Payments are processed in Nigerian Naira (NGN) via Paystack.</li>
+            <li>Credits added to your account are non-refundable once used.</li>
+            <li>Virtual number subscriptions renew monthly from your credit balance.</li>
+            <li>SWIFTDROP PREMIER SOLUTIONS LIMITED reserves the right to change pricing with notice.</li>
+          </ul>
+        </Section>
+
+        <Section number="5" title="Acceptable Use">
+          <p>You agree not to use Flux Virtual to:</p>
+          <ul className="list-disc list-inside space-y-1.5 pl-1 mt-2">
+            <li>Send spam, unsolicited messages, or engage in harassment.</li>
+            <li>Conduct fraudulent, deceptive, or illegal activities.</li>
+            <li>Violate any applicable laws or regulations.</li>
+            <li>Attempt to reverse-engineer or misuse the platform.</li>
+          </ul>
+        </Section>
+
+        <Section number="6" title="Service Availability">
           <p>
-            We do not sell, rent, or trade personal information to third
-            parties. Information may be shared only when required by law or to
-            provide our services.
+            SWIFTDROP PREMIER SOLUTIONS LIMITED strives to maintain high
+            availability but does not guarantee uninterrupted access to Flux
+            Virtual. We reserve the right to suspend or terminate the service
+            for maintenance, security, or other operational reasons.
           </p>
         </Section>
 
-        <Section number="6" title="Data Security">
+        <Section number="7" title="Limitation of Liability">
           <p>
-            We use industry-standard security measures designed to protect user
-            data from unauthorized access, disclosure, or misuse.
+            To the maximum extent permitted by law, SWIFTDROP PREMIER SOLUTIONS
+            LIMITED shall not be liable for any indirect, incidental, or
+            consequential damages arising from your use of Flux Virtual.
           </p>
         </Section>
 
-        <Section number="7" title="Data Retention">
+        <Section number="8" title="Termination">
           <p>
-            We retain user information only as long as necessary to provide
-            services, comply with legal obligations, resolve disputes, and
-            enforce agreements.
+            SWIFTDROP PREMIER SOLUTIONS LIMITED reserves the right to suspend or
+            terminate accounts that violate these Terms of Service without prior
+            notice.
           </p>
         </Section>
 
-        <Section number="8" title="User Rights">
+        <Section number="9" title="Changes to Terms">
           <p>
-            Users may request access, correction, or deletion of their personal
-            data by contacting us using the email address below.
+            SWIFTDROP PREMIER SOLUTIONS LIMITED may update these Terms of
+            Service at any time. Continued use of Flux Virtual after changes
+            are posted constitutes your acceptance of the updated terms.
           </p>
         </Section>
 
-        <Section number="9" title="Contact Us">
+        <Section number="10" title="Contact">
           <div className="mt-2 p-5 bg-soft-orange/5 border border-soft-orange/20 rounded-2xl">
             <p className="text-dark-brown dark:text-white font-semibold mb-1">
               SWIFTDROP PREMIER SOLUTIONS LIMITED
@@ -184,10 +181,10 @@ export const PrivacyPolicy = () => {
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               Email:{" "}
               <a
-                href="mailto:fluxvirtualofficial@gmail.com"
+                href={`mailto:${config.brand.email}`}
                 className="text-soft-orange hover:underline font-medium"
               >
-                fluxvirtualofficial@gmail.com
+                {config.brand.email}
               </a>
             </p>
           </div>

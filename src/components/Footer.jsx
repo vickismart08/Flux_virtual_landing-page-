@@ -8,12 +8,11 @@ import { Mail, Heart } from "lucide-react";
 import { config } from "../config";
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   const footerLinks = [
+    { label: "About", href: "/about" },
     { label: "Privacy Policy", href: config.legal.privacy },
-    { label: "Terms of Service", href: config.legal.terms },
-    { label: "Contact Support", href: config.legal.support },
+    { label: "Terms of Service", href: "/terms" },
+    { label: "Contact", href: "/contact" },
   ];
 
   const socialLinks = [
@@ -39,6 +38,12 @@ export const Footer = () => {
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
               Global virtual phone numbers for SMS, calls, and verification.
+            </p>
+            <p className="text-gray-500 dark:text-gray-500 text-xs leading-relaxed mt-3">
+              {config.brand.companyTagline}
+            </p>
+            <p className="text-gray-500 dark:text-gray-500 text-xs leading-relaxed mt-1">
+              {config.brand.companyOperator}
             </p>
           </motion.div>
 
@@ -160,10 +165,15 @@ export const Footer = () => {
             viewport={{ once: true }}
             className="text-gray-600 dark:text-gray-400 text-sm"
           >
-            <p>
-              {config.brand.copyright} | Built with{" "}
-              <Heart className="inline w-4 h-4 text-soft-orange" /> for the
-              world
+            <p>{config.brand.copyright}</p>
+            <p className="mt-1">
+              {config.brand.companyOperator}
+            </p>
+            <p className="mt-1 flex items-center gap-1">
+              Built with <Heart className="inline w-3 h-3 text-soft-orange" /> by{" "}
+              <span className="font-semibold text-dark-brown dark:text-white">
+                {config.brand.company}
+              </span>
             </p>
           </motion.div>
 
