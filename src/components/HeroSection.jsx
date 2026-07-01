@@ -298,6 +298,9 @@ export const HeroSection = () => {
             <h1 className="text-dark-brown dark:text-white leading-tight">
               {config.brand.tagline}
             </h1>
+            <p className="mt-3 text-sm font-bold text-dark-brown dark:text-white">
+              {config.brand.companyTagline}
+            </p>
           </motion.div>
 
           <motion.p
