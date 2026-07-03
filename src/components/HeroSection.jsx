@@ -358,7 +358,7 @@ export const HeroSection = () => {
               Founded by <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
             </p>
             <p className="text-xs text-gray-500 dark:text-gray-400">
-              Founder &amp; CEO: <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
+              Founder &amp; CEO of {config.brand.company}: <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
             </p>
           </motion.div>
         </motion.div>
