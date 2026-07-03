@@ -80,7 +80,10 @@ export const Contact = () => {
               SWIFTDROP PREMIER SOLUTIONS LIMITED
             </p>
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-              Flux Virtual is a product developed and operated by SWIFTDROP PREMIER SOLUTIONS LIMITED.
+              {config.brand.founderTitle}: <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
+            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+              {config.brand.address}
             </p>
           </div>
         </div>

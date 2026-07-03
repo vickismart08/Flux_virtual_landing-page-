@@ -131,14 +131,20 @@ export const About = () => {
           <h2 className="text-lg font-bold text-dark-brown dark:text-white mb-3 pb-2 border-b border-light-gray dark:border-dark-surface">
             Contact Us
           </h2>
-          <div className="p-5 bg-soft-orange/5 border border-soft-orange/20 rounded-2xl">
-            <p className="text-dark-brown dark:text-white font-semibold mb-1">
+          <div className="p-5 bg-soft-orange/5 border border-soft-orange/20 rounded-2xl space-y-1">
+            <p className="text-dark-brown dark:text-white font-semibold">
               SWIFTDROP PREMIER SOLUTIONS LIMITED
             </p>
-            <p className="text-gray-600 dark:text-gray-400 text-sm mb-1">
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
               Trading as: <strong className="text-dark-brown dark:text-white">Flux Virtual</strong>
             </p>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
+              {config.brand.founderTitle}: <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
+            </p>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
+              {config.brand.address}
+            </p>
+            <p className="text-gray-600 dark:text-gray-400 text-sm pt-1">
               Email:{" "}
               <a
                 href={`mailto:${config.brand.email}`}

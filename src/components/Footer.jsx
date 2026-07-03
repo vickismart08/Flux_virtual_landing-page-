@@ -45,6 +45,9 @@ export const Footer = () => {
             <p className="text-gray-500 dark:text-gray-500 text-xs leading-relaxed mt-1">
               {config.brand.companyOperator}
             </p>
+            <p className="text-gray-500 dark:text-gray-500 text-xs leading-relaxed mt-1">
+              {config.brand.address}
+            </p>
           </motion.div>
 
           {/* Product Links */}

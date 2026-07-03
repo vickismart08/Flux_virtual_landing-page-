@@ -14,6 +14,9 @@ export const config = {
     company: 'SWIFTDROP PREMIER SOLUTIONS LIMITED',
     companyTagline: 'Flux Virtual is a product of SWIFTDROP PREMIER SOLUTIONS LIMITED',
     companyOperator: 'Operated by SWIFTDROP PREMIER SOLUTIONS LIMITED',
+    founder: 'Victor Amule',
+    founderTitle: 'Founder & CEO',
+    address: '12 Araromi, Ibadan, Oyo State, Nigeria.',
   },
 
   // Download Links (Replace these with actual app store links)
