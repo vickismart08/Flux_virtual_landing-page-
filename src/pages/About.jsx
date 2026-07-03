@@ -67,15 +67,21 @@ export const About = () => {
         className="max-w-3xl mx-auto px-4 sm:px-6 py-12"
       >
         {/* Company Banner */}
-        <div className="mb-10 p-6 bg-soft-orange/5 border border-soft-orange/20 rounded-2xl">
+        <div className="mb-10 p-6 bg-soft-orange/5 border border-soft-orange/20 rounded-2xl space-y-1">
           <p className="text-xs font-semibold text-soft-orange uppercase tracking-wider mb-1">
             Legal Operator
           </p>
           <p className="text-xl font-bold text-dark-brown dark:text-white">
-            SWIFTDROP PREMIER SOLUTIONS LIMITED
+            {config.brand.company}
           </p>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Flux Virtual is a product of SWIFTDROP PREMIER SOLUTIONS LIMITED, a registered business.
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            Flux Virtual is a product of {config.brand.company}, a registered business.
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            Founded by <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            Founder &amp; CEO: <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
           </p>
         </div>
 
