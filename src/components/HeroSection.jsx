@@ -347,13 +347,19 @@ export const HeroSection = () => {
             </a>
           </motion.div>
 
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} className="flex flex-col gap-1">
             <Link
               to={config.legal.privacy}
               className="inline-flex text-soft-orange hover:underline font-medium text-sm"
             >
               Privacy Policy
             </Link>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              Founded by <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
+            </p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              Founder &amp; CEO: <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
+            </p>
           </motion.div>
         </motion.div>
 
