@@ -139,10 +139,7 @@ export const About = () => {
               Trading as: <strong className="text-dark-brown dark:text-white">Flux Virtual</strong>
             </p>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              {config.brand.founderTitle}: <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
-            </p>
-            <p className="text-gray-600 dark:text-gray-400 text-sm">
-              {config.brand.address}
+              Founded by <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
             </p>
             <p className="text-gray-600 dark:text-gray-400 text-sm pt-1">
               Email:{" "}

@@ -74,16 +74,17 @@ export const Contact = () => {
           </div>
           <div>
             <p className="text-xs font-semibold text-soft-orange uppercase tracking-wider mb-1">
-              Legal Entity
+              Registered Business
             </p>
             <p className="text-lg font-bold text-dark-brown dark:text-white">
-              SWIFTDROP PREMIER SOLUTIONS LIMITED
+              {config.brand.company}
             </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-              {config.brand.founderTitle}: <strong className="text-dark-brown dark:text-white">{config.brand.founder}</strong>
-            </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-              {config.brand.address}
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{config.brand.rc}</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+              12 Araromi,<br />
+              Ibadan,<br />
+              Oyo State,<br />
+              Nigeria
             </p>
           </div>
         </div>
