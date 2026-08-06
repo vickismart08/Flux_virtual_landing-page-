@@ -187,13 +187,22 @@ export const PrivacyPolicy = () => {
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-1">
               Trading as: <strong className="text-dark-brown dark:text-white">Flux Virtual</strong>
             </p>
-            <p className="text-gray-600 dark:text-gray-400 text-sm">
-              Email:{" "}
+            <p className="text-gray-600 dark:text-gray-400 text-sm mb-1">
+              Support:{" "}
               <a
                 href="mailto:support@flux-virtual.online"
                 className="text-soft-orange hover:underline font-medium"
               >
                 support@flux-virtual.online
+              </a>
+            </p>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
+              Website:{" "}
+              <a
+                href="https://flux-virtual.online"
+                className="text-soft-orange hover:underline font-medium"
+              >
+                flux-virtual.online
               </a>
             </p>
           </div>
@@ -202,7 +211,7 @@ export const PrivacyPolicy = () => {
         {/* Footer */}
         <div className="mt-8 pt-8 border-t border-light-gray dark:border-dark-surface flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500 dark:text-gray-500">
-            © {new Date().getFullYear()} SWIFTDROP PREMIER SOLUTIONS LIMITED. All rights reserved.
+            © 2026 Victor Amule · SWIFTDROP PREMIER SOLUTIONS LIMITED. All rights reserved.
           </p>
           <Link
             to="/"
