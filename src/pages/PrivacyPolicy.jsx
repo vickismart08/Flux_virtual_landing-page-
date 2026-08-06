@@ -96,6 +96,12 @@ export const PrivacyPolicy = () => {
             SWIFTDROP PREMIER SOLUTIONS LIMITED
           </p>
           <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Flux Virtual is developed and owned by Victor Amule.
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Flux Virtual is operated under Victor Amule, a developer in Nigeria.
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
             Flux Virtual is a product developed and operated by SWIFTDROP
             PREMIER SOLUTIONS LIMITED. This Privacy Policy explains how we
             collect, use, and protect your information when you use our mobile
